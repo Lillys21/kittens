@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; /*aliena el elemento horizontalmente*/
+}
+
+.back1{
+  background-image: url(../assets/images/dawn.png);
+  /*color: white;*/
+  background-position: center;
+  background-size: cover;
+}
+.back1 img{
+  max-width: 100%;
+  }
+
+.back2{
+  background-image: url(../assets/images/night.jpg);
+  /*color: white;*/
+  background-position: center;
+  background-size: cover;
+}
+.back2 img{
+  max-width: 100%;
+  text-align: center;
+}
+
+.back3{
+  background-image: url(../assets/images/sunny-day.jpg);
+  /*color: white;*/
+  background-position: center;
+  background-size: cover;
+}
+.back3 img{
+  max-width: 100%;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1024px){
+
+  /*.back3{
+    background-image: url(../assets/images/sunny-day.jpg);
+    background-position: center;
+    background-size: cover;
+  }*/
+
+  .back3 img{
+    width: 50%;
+  }
+
+  .back2 img{
+    display: none;
+  }
+  .back1 img{
+    display: none;
+  }
+  .back2, .back1{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 780px){
+  /*.back2{
+    background-image: url(../assets/images/night.jpg);
+    background-position: center;
+    background-size: cover;
+  }*/
+  .back2 img{
+    width: 50%;
+  }
+
+  .back3 img{
+    display: none;
+  }
+  .back1 img{
+    display: none;
+  }
+  .back3, .back1{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px){
+  /*.back1{
+    background-image: url(../assets/images/dawn.png);
+    background-position: center;
+    background-size: cover;
+  }*/
+  .back1 img{
+    width: 50%;
+    }
+
+    .back3 img{
+      display: none;
+    }
+    .back2 img{
+      display: none;
+    }
+    .back3, .back2{
+      display: none;
+    }
+}
